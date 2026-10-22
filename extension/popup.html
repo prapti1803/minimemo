@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { width: 350px; margin: 0; padding: 14px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #fff; color: #333; }
+        h2 { margin: 0 0 10px 0; font-size: 18px; color: #1a73e8; }
+        .status { font-size: 11px; padding: 4px 8px; border-radius: 12px; background: #e8f0fe; color: #174ea6; font-weight: 600; margin-bottom: 12px; }
+        button { width: 100%; padding: 10px; margin-bottom: 8px; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; }
+        #btnGenerate { background: #1a73e8; color: #fff; }
+        #btnPdf { background: #34a853; color: #fff; display: none; }
+        #btnClear { background: #dc3545; color: #fff; }
+        #output { margin-top: 10px; max-height: 280px; overflow-y: auto; padding: 10px; background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 6px; font-size: 12px; line-height: 1.5; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+<h2>📝 MiniMemo</h2>
+<div class="status" id="statusText">Listening for CC captions...</div>
+
+<button id="btnGenerate">Generate Memo Now</button>
+<button id="btnPdf">Export / Print PDF Memo</button>
+<button id="btnClear">Clear Captured Transcript</button>
+
+<div id="output">Click "Generate Memo Now" anytime during your call to extract live notes.</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
